@@ -1,0 +1,216 @@
+:root {
+  --color-secondary: #205375;
+  --color-accent: #0000;
+  --color-dark: #EFEFEF;
+}
+
+*{
+ 
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+
+body {
+  background: #FFFFFF;
+  color: var(--color-dark);
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;  
+}
+
+.wrapper_app {
+  background-color:#FFFFFF;
+  height: 100vh;
+  padding: 8rem;
+  width: 100vw;
+}
+#app {
+  align-items: stretch;
+  background: transparent;
+  border-radius: 1rem;
+  box-shadow: 0 1rem 2rem rgba(0,0,0,0.4);
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  margin: 0 auto;
+  text-align: center;
+  width: 50vw;
+  position: relative;
+}
+
+
+.headline {
+  background-color: rgb(0, 0, 0);
+  border-top-left-radius: inherit;
+  border-top-right-radius: inherit;
+}
+
+.headline_heading {
+  color: #EFEFEF;
+  font-family: 'Raleway', sans-serif;
+  font-size: 3rem;
+  letter-spacing: 0.5rem;
+  padding: 1rem 0;
+  text-transform: uppercase;
+}
+
+
+.app_form {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  margin: 0 auto;
+  min-height: 50%;
+  width: 70%;
+  position: relative;
+}
+
+.app_form div label {
+  color: #000000;
+  font-size: 1.6rem;
+  left: 2rem;
+  position: absolute;
+  top: 3rem;
+  transition: 0.5s;
+}
+#zip,
+#feelings {
+  background: #FFFFFF;
+  border: 0.2rem solid #000000;
+  border-radius: 1rem;
+  color: #000000;
+  display: block;
+  font-size: 2rem;
+  height: 6rem;
+  text-align: center;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.zip {
+  position: relative;
+  width: 100%;
+}
+
+#zip {
+  padding: 1.5rem 1rem;
+  text-transform: uppercase;
+  width: 100%;
+}
+
+  
+/* Feelings field */
+
+.feel {
+  position: relative;
+  width: 100%;
+}
+
+#feelings {
+  overflow: hidden;
+  padding: 2rem;
+  resize: none;
+  font-size: 2.5rem;
+}
+
+/* Button Generate */
+
+#generate {
+  background: #fff;
+  border: 0.2rem solid #000000;
+  border-radius: 1rem;
+  box-shadow: 1rem 1rem 2rem #444;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  font-family: 'Raleway', sans-serif;
+  font-size: 1.5rem;
+  font-weight: bold;
+  height: 5rem;
+  letter-spacing: 0.2rem;
+  margin-top: 3rem;
+  opacity: 0.8;
+  text-transform: uppercase;
+  transition: all 0.1s;
+  width: 50%;
+}
+
+
+.entry {
+  background: #007a3d;
+  border-bottom-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  color: #fff;
+  font-family: 'Raleway', sans-serif;
+  height: 13rem;
+  text-shadow: 0 0.3rem 1rem rgba(0,0,0,0.7);
+}
+
+.entry_title {
+  color:#FFFFFF;
+  font-size: 1.8rem;
+  font-weight: bold;
+  letter-spacing: 0.2rem;
+  text-shadow: 0 0.3rem 0.3rem rgba(0,0,0,0.9);
+  margin: 2rem 0 1rem 0;
+  text-transform: uppercase;
+}
+
+#entryHolder {
+  align-items: center;
+  display: flex;
+  font-size: 1.2rem;
+  justify-content: space-evenly;
+  padding: 2rem 0;
+}
+
+
+
+.entry_date,
+.entry_temp,
+.entry_content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.entry_date {
+  margin-left: 5rem;
+}
+
+.entry_content {
+  justify-content: flex-start;
+  flex: 2;
+}
+
+
+.entry_icon {
+  color: var(--color-accent);
+  opacity: 0;
+  padding: 0 0 0 1rem;
+}
+
+#date,
+#temp,
+#content {
+  padding: 0 4rem 0 2rem;
+  font-size: 3rem;
+}
+.clip{
+  transition: all .4s ease-in-out;
+  width: 70%;
+  height: 100%;
+  background-color: var(--color-secondary);
+  position: absolute;
+  left: 0;
+
+  clip-path: polygon(0 2%, 0 98%, 48% 50%);
+  background: #CE1126;
+  position: absolute;
+}
