@@ -27,6 +27,8 @@ body {
   height: 100vh;
   padding: 8rem;
   width: 100vw;
+  text-align: center;
+
 }
 #app {
   align-items: stretch;
